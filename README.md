@@ -35,12 +35,12 @@ Access to http://localhost:8080 , then browser asks you username and password.
 |`BASIC_AUTH_USERNAME`|Basic auth username|
 |`BASIC_AUTH_PASSWORD`|Basic auth password|
 |`PROXY_PASS`|Proxy destination URL|
-|`SERVER_NAME`|Nginx server name|
 
 ### Optional
 
 |Key|Description|Default|
 |---|---|---|
+|`SERVER_NAME`|Value for `server_name` directive|`example.com`|
 |`WORKER_PROCESSES`|Value for `worker_processes` directive|`auto`|
 
 ## Author

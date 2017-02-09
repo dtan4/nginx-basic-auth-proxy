@@ -12,11 +12,6 @@ if [ -z $BASIC_AUTH_PASSWORD ]; then
   exit 1
 fi
 
-if [ -z $SERVER_NAME ]; then
-  echo >&2 "SERVER_NAME must be set"
-  exit 1
-fi
-
 if [ -z $PROXY_PASS ]; then
   echo >&2 "PROXY_PASS must be set"
   exit 1

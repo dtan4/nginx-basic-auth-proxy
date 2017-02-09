@@ -4,6 +4,7 @@ FROM nginx:1.11.9-alpine
 RUN apk add --no-cache --update \
       apache2-utils
 
+ENV SERVER_NAME example.com
 ENV WORKER_PROCESSES auto
 
 COPY files/run.sh /
