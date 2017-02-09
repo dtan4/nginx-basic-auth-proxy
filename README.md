@@ -26,6 +26,16 @@ $ docker run \
 
 Access to http://localhost:8080 , then browser asks you username and password.
 
+You can also try complete HTTP-proxy example using Docker Compose.
+hello-world web application cannot be accessed without authentication.
+
+```bash
+$ docker-compose up
+# http://localhost:8080/
+# - Username: username
+# - Password: password
+```
+
 ## Environment variables
 
 ### Required
