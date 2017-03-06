@@ -21,6 +21,7 @@ $ docker run \
     -e BASIC_AUTH_PASSWORD=password \
     -e PROXY_PASS=https://www.google.com \
     -e SERVER_NAME=proxy.dtan4.net \
+    -e PORT=80 \
     quay.io/dtan4/nginx-basic-auth-proxy
 ```
 
@@ -51,6 +52,7 @@ $ docker-compose up
 |Key|Description|Default|
 |---|---|---|
 |`SERVER_NAME`|Value for `server_name` directive|`example.com`|
+|`PORT`|Value for `listen` directive|`80`|
 |`WORKER_PROCESSES`|Value for `worker_processes` directive|`auto`|
 
 ## Author
