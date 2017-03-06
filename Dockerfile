@@ -5,6 +5,7 @@ RUN apk add --no-cache --update \
       apache2-utils
 
 ENV SERVER_NAME example.com
+ENV PORT 80
 ENV WORKER_PROCESSES auto
 
 COPY files/run.sh /
