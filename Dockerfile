@@ -2,8 +2,8 @@ FROM nginx:1.11.9-alpine
 
 # for htpasswd command
 RUN apk add --no-cache --update \
-      apache2-utils \
-    && rm -f /etc/nginx/conf.d/*
+      apache2-utils
+RUN rm -f /etc/nginx/conf.d/*
 
 ENV SERVER_NAME example.com
 ENV PORT 80
