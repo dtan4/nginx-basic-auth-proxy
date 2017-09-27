@@ -13,4 +13,8 @@ ENV WORKER_PROCESSES auto
 COPY files/run.sh /
 COPY files/nginx.conf.tmpl /
 
+# use SIGQUIT for graceful shutdown
+# c.f. http://nginx.org/en/docs/control.html
+STOPSIGNAL SIGQUIT
+
 ENTRYPOINT ["/run.sh"]
