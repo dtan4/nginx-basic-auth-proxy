@@ -54,6 +54,7 @@ $ docker-compose up
 |`SERVER_NAME`|Value for `server_name` directive|`example.com`|
 |`PORT`|Value for `listen` directive|`80`|
 |`CLIENT_MAX_BODY_SIZE`|Value for `client_max_body_size` directive|`1m`|
+|`PROXY_READ_TIMEOUT`|Value for `proxy_read_timeout` directive|`60s`|
 |`WORKER_PROCESSES`|Value for `worker_processes` directive|`auto`|
 
 ## Author
