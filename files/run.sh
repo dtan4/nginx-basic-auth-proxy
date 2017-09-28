@@ -20,6 +20,7 @@ fi
 htpasswd -bBc /etc/nginx/.htpasswd $BASIC_AUTH_USERNAME $BASIC_AUTH_PASSWORD
 sed \
   -e "s/##CLIENT_MAX_BODY_SIZE##/$CLIENT_MAX_BODY_SIZE/g" \
+  -e "s/##PROXY_READ_TIMEOUT##/$PROXY_READ_TIMEOUT/g" \
   -e "s/##WORKER_PROCESSES##/$WORKER_PROCESSES/g" \
   -e "s/##SERVER_NAME##/$SERVER_NAME/g" \
   -e "s/##PORT##/$PORT/g" \
