@@ -17,6 +17,7 @@ $ docker run \
     --rm \
     --name nginx-basic-auth-proxy \
     -p 8080:80 \
+    -p 8090:8090 \
     -e BASIC_AUTH_USERNAME=username \
     -e BASIC_AUTH_PASSWORD=password \
     -e PROXY_PASS=https://www.google.com \
@@ -35,6 +36,18 @@ $ docker-compose up
 # http://localhost:8080/
 # - Username: username
 # - Password: password
+```
+
+### Endpoint for monitoring
+
+`:8090/nginx_status` returns the metrics of Nginx.
+
+```sh-session
+$ curl localhost:8090/nginx_status
+Active connections: 1
+server accepts handled requests
+ 8 8 8
+Reading: 0 Writing: 1 Waiting: 0
 ```
 
 ## Environment variables

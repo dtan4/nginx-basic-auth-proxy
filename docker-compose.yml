@@ -6,6 +6,7 @@ services:
     image: quay.io/dtan4/nginx-basic-auth-proxy:latest
     ports:
       - 8080:80
+      - 8090:8090
     environment:
       - BASIC_AUTH_USERNAME=username
       - BASIC_AUTH_PASSWORD=password
