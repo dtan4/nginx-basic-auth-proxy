@@ -26,7 +26,7 @@ http {
       auth_basic_user_file /etc/nginx/.htpasswd;
 
       proxy_set_header X-Forwarded-Host $host;
-      proxy_set_header X-Forwarded-Proto $scheme;
+      proxy_set_header X-Forwarded-Proto https;
       # Do not pass Authorization header to destination
       proxy_set_header Authorization "";
     }
